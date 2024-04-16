@@ -68,7 +68,11 @@ const ReleasesController = ({
       )}
       {ready && (
         <Fragment>
-          {visible && <Notification />}
+          {visible && (
+            <div className="u-fixed-width" style={{ marginTop: "1rem" }}>
+              <Notification />
+            </div>
+          )}
           <div className="u-fixed-width u-hide--large u-hide--medium">
             <div className="p-notification--caution">
               <div className="p-notification__content">
@@ -82,7 +86,7 @@ const ReleasesController = ({
               </div>
             </div>
           </div>
-          <ReleasesHeading />
+          <ReleasesHeading snapName={snapName} />
           {showModal && <Modal />}
         </Fragment>
       )}
