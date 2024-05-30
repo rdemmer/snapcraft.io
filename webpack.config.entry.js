@@ -23,4 +23,5 @@ module.exports = {
   "publisher-collaboration": "./static/js/publisher/collaboration/index.tsx",
   "about-listing": "./static/js/public/about/listing.ts",
   store: "./static/js/store/index.tsx",
+  admin: "./static/js/admin/index.tsx",
 };
